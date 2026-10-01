@@ -1,0 +1,189 @@
+/*
+ * css/theme.css, Single source of truth for all design tokens.
+ * Load this FIRST in every page's <head> (before styles.css).
+ *
+ * Design language: EvE Waste Brand Guide v1.0 (Brenden Fowler).
+ * Color palette:   Forest Green / Clay Blue / Digestate Green /
+ *                  Cloud White / Seedling Green / Sprout Green / Stone Grey.
+ * Typography:      Verdana (system) for body text, Archivo (Google Fonts)
+ *                  for headlines and labels.
+ */
+
+:root {
+
+  /* ═══════════════════════════════════════
+     EVE WASTE BRAND PALETTE (guide v1.0)
+  ═══════════════════════════════════════ */
+  --forest-green:     #15342D;   /* backgrounds, header/footer, hero, primary CTA */
+  --clay-blue:        #DAE1DE;   /* secondary / light page background            */
+  --digestate-green:  #152116;   /* headings on lite bg, dark overlay, infographics */
+  --cloud-white:      #FFFFFF;   /* body text, forms, icons on dark backgrounds   */
+  --seedling-green:   #4B714F;   /* buttons / links / interactive elements        */
+  --sprout-green:     #65976A;   /* metrics, stats, highlights                    */
+  --stone-grey:       #DED9D5;   /* borders, outlines                             */
+
+  /* ═══════════════════════════════════════
+     SURFACES
+  ═══════════════════════════════════════ */
+  --surface:                  #DAE1DE;   /* Clay Blue, light page background      */
+  --surface-dim:              #CCD5D1;
+  --surface-container-lowest: #FFFFFF;   /* Cloud White, card bg                  */
+  --surface-container-low:    #E4E9E6;
+  --surface-container:        #EAEEEC;
+  --surface-container-high:   #F0F2F0;
+  --on-surface:               #152116;   /* Digestate Green, headings + body      */
+  --on-surface-variant:       rgba(21, 33, 22, 0.68);
+  --inverse-surface:          #15342D;   /* Forest Green, footer bg                */
+  --inverse-on-surface:       #DAE1DE;   /* Clay Blue on footer                     */
+
+  /* ═══════════════════════════════════════
+     DARK SURFACE  (header / overlay / footer / hero)
+  ═══════════════════════════════════════ */
+  --dark-surface:            #15342D;   /* Forest Green                            */
+  --dark-surface-mid:        #1D473D;   /* lighter step of Forest Green            */
+  --dark-surface-deep:       #152116;   /* Digestate Green, high-contrast callout */
+  --dark-border:             rgba(255, 255, 255, 0.10);
+  --on-dark:                 #ffffff;
+  --on-dark-dim:              rgba(255, 255, 255, 0.58);
+
+  /* ═══════════════════════════════════════
+     PRIMARY  (Seedling Green, buttons / links / interactive)
+  ═══════════════════════════════════════ */
+  --primary:                 #4B714F;   /* Seedling Green                          */
+  --on-primary:              #ffffff;
+  --primary-container:       #15342D;   /* Forest Green, hover / pressed state    */
+  --on-primary-container:    #DAE1DE;   /* Clay Blue                               */
+  --inverse-primary:         #65976A;   /* Sprout Green, accent on dark bg        */
+  --primary-fixed:           #DAE1DE;   /* Clay Blue, light tint on dark bg       */
+  --primary-fixed-dim:       #65976A;   /* Sprout Green                            */
+
+  /* ═══════════════════════════════════════
+     ACCENT  (Sprout Green, stats, highlights, CTA-on-dark)
+  ═══════════════════════════════════════ */
+  --accent:                  #65976A;   /* stat values, eyebrow labels, dark CTA   */
+  --accent-dark:             #527d57;   /* pressed / focus                        */
+  --on-accent:               #152116;   /* Digestate Green, text on accent fill  */
+
+  /* ═══════════════════════════════════════
+     SECONDARY / TERTIARY
+  ═══════════════════════════════════════ */
+  --secondary:               #4B714F;   /* Seedling Green                          */
+  --on-secondary:            #ffffff;
+  --secondary-container:     #DAE1DE;   /* Clay Blue                                */
+  --on-secondary-container:  #15342D;   /* Forest Green                             */
+  --tertiary:                #65976A;   /* Sprout Green                             */
+  --on-tertiary:             #ffffff;
+  --tertiary-container:      #15342D;   /* Forest Green                             */
+  --on-tertiary-container:   #DAE1DE;   /* Clay Blue                                */
+  --tertiary-fixed:          #EAEEEC;
+
+  /* ═══════════════════════════════════════
+     LEGACY ALIASES  (kept so existing call sites resolve)
+  ═══════════════════════════════════════ */
+  --industrial-slate:        #152116;   /* Digestate Green, .section--slate bg    */
+  --bio-moss:                #65976A;   /* Sprout Green, eyebrow / tag / label     */
+  --circuit-blue:            #DAE1DE;   /* Clay Blue                                */
+
+  /* ═══════════════════════════════════════
+     OUTLINES
+  ═══════════════════════════════════════ */
+  --outline:                 #C9C2BC;   /* Stone Grey, darkened for visibility     */
+  --outline-variant:         #DED9D5;   /* Stone Grey                              */
+  --outline-cream:           rgba(21, 33, 22, 0.10);
+
+  /* ═══════════════════════════════════════
+     TYPOGRAPHY , font families
+     Archivo for headlines/labels, Verdana (system) for body text.
+  ═══════════════════════════════════════ */
+  --font-headline: 'Archivo', Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  --font-body:     Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  --font-sans:     Verdana, Geneva, 'DejaVu Sans', sans-serif;
+  --font-label:    'Archivo', Verdana, Geneva, sans-serif;
+  --font-serif:    'Archivo', Verdana, Geneva, sans-serif;
+  --font-mono:     ui-monospace, 'Cascadia Mono', Consolas, monospace;
+
+  /* ── type scale ── */
+  --text-hero:       clamp(3rem, 9vw, 8rem);       /* full-bleed hero h1        */
+  --text-display:    clamp(2.5rem, 6vw, 5.5rem);   /* section h2                */
+  --text-heading:    clamp(1.75rem, 3.5vw, 3rem);  /* h3                        */
+  --text-subhead:    clamp(1.25rem, 2vw, 1.875rem);/* h4 / card titles          */
+  --text-body-lg:    1.0625rem;   /* was 1.125rem, Verdana compensation */
+  --text-body:       0.9375rem;   /* was 1rem, Verdana compensation */
+  --text-sm:         0.8125rem;   /* was 0.875rem, Verdana compensation */
+  --text-label:      0.6875rem;   /* 11px */
+
+  /* ── leading ── */
+  --leading-tight:   1.05;
+  --leading-snug:    1.2;
+  --leading-normal:  1.55;
+  --leading-loose:   1.7;
+
+  /* ── tracking ── */
+  --tracking-tight:  -0.03em;
+  --tracking-wide:    0.12em;
+
+  /* ═══════════════════════════════════════
+     SPACING
+  ═══════════════════════════════════════ */
+  --unit:              4px;
+  --gutter:            24px;
+  --margin-desktop:    64px;
+  --margin-mobile:     16px;
+  --max-width:         1440px;
+  --section-padding:   clamp(4rem, 8vw, 7rem);
+  --container-pad:     clamp(1.25rem, 5vw, 4.5rem);
+  --header-h:          72px;
+
+  /* named scale */
+  --space-2:   0.5rem;    /*  8px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+  --space-32:  8rem;      /* 128px */
+
+  /* ═══════════════════════════════════════
+     BORDERS & RADIUS  (sharp, no signature pill shape)
+  ═══════════════════════════════════════ */
+  --radius:      0px;
+
+  /* ═══════════════════════════════════════
+     TRANSITIONS
+  ═══════════════════════════════════════ */
+  --transition-fast:   150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:   300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:   600ms cubic-bezier(0.22, 1, 0.36, 1);
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+  --transition-menu:   450ms cubic-bezier(0.76, 0, 0.24, 1);
+
+  /* ═══════════════════════════════════════
+     SHADOWS
+  ═══════════════════════════════════════ */
+  --shadow-sm: 0 1px 3px rgba(21, 52, 45, 0.08);
+  --shadow-md: 0 4px 16px rgba(21, 52, 45, 0.12);
+  --shadow-lg: 0 12px 40px rgba(21, 52, 45, 0.18);
+
+  /* ═══════════════════════════════════════
+     Z-INDEX
+  ═══════════════════════════════════════ */
+  --z-base:    1;
+  --z-above:   10;
+  --z-header:  100;
+  --z-overlay: 200;
+}
+
+/* ── Reduced motion: zero all durations site-wide ── */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast:   0ms;
+    --transition-base:   0ms;
+    --transition-slow:   0ms;
+    --transition-spring: 0ms;
+    --transition-menu:   0ms;
+  }
+}

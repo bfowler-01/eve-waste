@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How a Pilot Works | EvE Waste</title>
+  <meta name="description" content="How an EvE Waste pilot works.">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" href="assets/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#15342D">
+  <!-- ============================================================
+       TEMPORARILY DISABLED 2026-09-07, at Kyla's request, so the team can
+       confirm the pilot details and data before any of it is public.
+
+       The content below is intact and untouched: this page is turned off by
+       routing, not by deletion. To bring it back:
+         1. delete the robots meta and the redirect script just below
+         2. restore its entry in sitemap.xml
+         3. put "How a Pilot Works" back in the menu (see nav in any page)
+         4. remove the /use-cases.html rule from _redirects
+       ============================================================ -->
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Sends anyone who reaches this URL to the 404 page. _redirects serves a real
+       404 on Cloudflare Pages; this is the belt-and-braces for hosts that ignore it,
+       such as GitHub Pages. A meta refresh rather than a script, so it needs no CSP
+       hash and still works with JavaScript disabled. -->
+  <meta http-equiv="refresh" content="0; url=404.html">
+  <link rel="canonical" href="https://evewaste.com/use-cases.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="EvE Waste">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:url" content="https://evewaste.com/use-cases.html">
+  <meta property="og:title" content="How an EvE Waste pilot works">
+  <meta property="og:description" content="How an EvE Waste pilot works.">
+  <meta property="og:image" content="https://evewaste.com/assets/og/pilots.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="How an EvE Waste pilot works.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@EvEWaste1">
+  <meta name="twitter:title" content="How an EvE Waste pilot works">
+  <meta name="twitter:description" content="How an EvE Waste pilot works.">
+  <meta name="twitter:image" content="https://evewaste.com/assets/og/pilots.png">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://evewaste.com/#organization",
+    "name": "EvE Waste LLC",
+    "alternateName": "EvE Waste",
+    "url": "https://evewaste.com/",
+    "logo": "https://evewaste.com/assets/logo-512.png",
+    "description": "EvE Waste is developing a modular bio-reactor that turns food waste into clean energy and nutrient-rich fertilizer through the process of anaerobic digestion.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Columbus",
+      "addressRegion": "OH",
+      "addressCountry": "US"
+    },
+    "areaServed": { "@type": "City", "name": "Columbus, Ohio" },
+    "sameAs": [
+      "https://www.linkedin.com/company/108059157",
+      "https://www.facebook.com/EvEWasteSolutions/",
+      "https://x.com/EvEWaste1",
+      "https://www.instagram.com/evewaste"
+    ]
+  }
+  </script>
+
+  <!-- Marks that scripting is live so the scroll-reveal styles can apply.
+       Without it .fade-up stays at its visible resting state. -->
+  <script>document.documentElement.classList.add('js');</script>
+
+
+
+  <link rel="preload" href="assets/fonts/archivo-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/theme.css?v=b677748b">
+  <link rel="stylesheet" href="css/styles.css?v=b86e4b4b">
+  <link rel="stylesheet" href="css/use-cases.css?v=2e54db58">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ════ HEADER ════ -->
+  <header class="site-header" id="siteHeader">
+    <div class="site-header__inner">
+      <a href="index.html" class="site-header__logo" aria-label="EvE Waste home">
+        <img class="logo-lockup" src="assets/eve-logo-176.png"
+             srcset="assets/eve-logo-176.png 1x, assets/eve-logo-352.png 2x"
+             width="176" height="50" alt="" loading="eager" decoding="async">
+      </a>
+      <button type="button" class="menu-toggle" id="menuToggle"
+        aria-expanded="false" aria-controls="menuOverlay"
+        aria-label="Open navigation menu">
+        <span class="menu-toggle__icon" aria-hidden="true">
+          <span></span><span></span>
+        </span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ════ OVERLAY MENU ════ -->
+  <div class="menu-overlay" id="menuOverlay"
+    role="dialog" aria-modal="true"
+    aria-label="Site navigation" aria-hidden="true">
+    <nav class="menu-overlay__nav" aria-label="Main navigation">
+      <ul class="menu-overlay__links">
+        <li><a href="index.html" class="menu-link">Home<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+        <li><a href="platform.html" class="menu-link">Platform<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+        <li><a href="built.html" class="menu-link">What We've Built<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+        <li><a href="investors.html" class="menu-link">Investors<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+        <li><a href="faq.html" class="menu-link">FAQ<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+        <li><a href="team.html" class="menu-link">Team<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+        <li><a href="contact.html" class="menu-link">Contact<span class="menu-link__arrow" aria-hidden="true"> &rarr;</span></a></li>
+      </ul>
+      <div class="menu-overlay__aside">
+        <a href="contact.html" class="btn btn--accent menu-cta">Start a conversation</a>
+        <div class="menu-contact">
+          <p class="menu-contact__label">Get in touch</p>
+          <a href="contact.html" class="menu-contact__link">Contact us</a>
+        </div>
+      </div>
+    </nav>
+    <div class="menu-overlay__footer">
+      <span>&copy; 2026 EvE Waste</span>
+      <span class="menu-overlay__location">Columbus, OH</span>
+    </div>
+  </div>
+
+  <main id="main" tabindex="-1">
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__strip">
+          <a href="index.html" class="page-hero__back">Home</a>
+          <span class="page-hero__sep">/</span>
+          <h1 class="page-hero__title">How a Pilot Works</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pilot">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__eyebrow">Phase 1</span>
+          <h2 class="section__title">A 90-day monitoring pilot at three sites</h2>
+          <p class="section__lead">Before anyone installs a digester, we measure what your waste actually does. Phase 1 puts a camera on the container, reconciles every invoice line against what it saw, and ends with a straight answer about whether a digester makes sense for you.</p>
+        </div>
+
+        <div class="pilot-facts fade-up">
+          <div class="pilot-fact">
+            <span class="pilot-fact__value">3</span>
+            <span class="pilot-fact__label">Sites</span>
+          </div>
+          <div class="pilot-fact">
+            <span class="pilot-fact__value">90</span>
+            <span class="pilot-fact__label">Days of monitored operation</span>
+          </div>
+          <div class="pilot-fact">
+            <span class="pilot-fact__value">0</span>
+            <span class="pilot-fact__label">Obligation to continue</span>
+          </div>
+        </div>
+
+        <p class="pilot-note fade-up">Ninety days is not a round number. A performance-based waste audit, the manual alternative, samples for 60 to 90 days. Hauling invoices run monthly, and three full cycles is the least that lets us reconcile a pattern against a contract rather than an anomaly against a month.</p>
+
+        <ol class="pilot-timeline fade-up">
+          <li class="pilot-step">
+            <button type="button" class="pilot-step__dot" aria-expanded="false" aria-controls="pilotStep-1">
+              <span class="pilot-step__num">1</span>
+              <span class="sr-only">Site survey and scoping</span>
+            </button>
+            <span class="pilot-step__label" aria-hidden="true">Survey</span>
+            <div class="pilot-step__panel" id="pilotStep-1">
+              <h3 class="pilot-step__title">Site survey and scoping</h3>
+              <p class="pilot-step__when">Before day 1 &middot; about two weeks</p>
+              <p>We walk the site with your facilities lead and map what is actually there: every container, its size, its service frequency, and what goes into it. We read your hauling contract and the last twelve months of invoices.</p>
+              <p>You keep the container inventory and the contract summary at the end of this stage whether or not you continue.</p>
+              <p class="pilot-step__need"><strong>We need:</strong> site access, your hauling contract, twelve months of invoices.</p>
+            </div>
+          </li>
+          <li class="pilot-step">
+            <button type="button" class="pilot-step__dot" aria-expanded="false" aria-controls="pilotStep-2">
+              <span class="pilot-step__num">2</span>
+              <span class="sr-only">Install and baseline</span>
+            </button>
+            <span class="pilot-step__label" aria-hidden="true">Install</span>
+            <div class="pilot-step__panel" id="pilotStep-2">
+              <h3 class="pilot-step__title">Install and baseline</h3>
+              <p class="pilot-step__when">Day 1 &middot; a day per container, then fourteen days</p>
+              <p>We mount an edge camera at each monitored container. Faces and plates are blurred on the device, before any image leaves the site. That is how the system is built, not a setting.</p>
+              <p>The first fourteen days are a baseline. We change nothing about your service, so everything after is measured against your real starting point.</p>
+              <p class="pilot-step__need"><strong>Downtime to your operation:</strong> none.</p>
+            </div>
+          </li>
+          <li class="pilot-step">
+            <button type="button" class="pilot-step__dot" aria-expanded="false" aria-controls="pilotStep-3">
+              <span class="pilot-step__num">3</span>
+              <span class="sr-only">Monitored operation</span>
+            </button>
+            <span class="pilot-step__label" aria-hidden="true">Measure</span>
+            <div class="pilot-step__panel" id="pilotStep-3">
+              <h3 class="pilot-step__title">Monitored operation</h3>
+              <p class="pilot-step__when">Days 1&ndash;90 &middot; monthly report, findings as they occur</p>
+              <p>Fill level is estimated continuously and pickup events are detected on the device. Every invoice line is reconciled against what the camera actually saw.</p>
+              <p>Findings arrive as they are found, not in a report at the end. Each one carries the evidence that produced it, so you can check our work rather than take our word for it.</p>
+            </div>
+          </li>
+          <li class="pilot-step">
+            <button type="button" class="pilot-step__dot" aria-expanded="false" aria-controls="pilotStep-4">
+              <span class="pilot-step__num">4</span>
+              <span class="sr-only">Findings and action</span>
+            </button>
+            <span class="pilot-step__label" aria-hidden="true">Act</span>
+            <div class="pilot-step__panel" id="pilotStep-4">
+              <h3 class="pilot-step__title">Findings and action</h3>
+              <p class="pilot-step__when">Rolling, from roughly day 30</p>
+              <p>Over-servicing and under-servicing flags, right-sizing options with the dollar figure attached, and, where your contract allows it, a drafted renegotiation or fee-dispute letter grounded in your own data.</p>
+              <p>Nothing is sent to your hauler without your explicit approval. You decide what to act on; we do not act on your behalf.</p>
+            </div>
+          </li>
+          <li class="pilot-step">
+            <button type="button" class="pilot-step__dot" aria-expanded="false" aria-controls="pilotStep-5">
+              <span class="pilot-step__num">5</span>
+              <span class="sr-only">Decision</span>
+            </button>
+            <span class="pilot-step__label" aria-hidden="true">Decide</span>
+            <div class="pilot-step__panel" id="pilotStep-5">
+              <h3 class="pilot-step__title">Decision</h3>
+              <p class="pilot-step__when">Day 90</p>
+              <p>A closeout packet: the measured record, the savings actually realised, and an honest read on whether an on-site digester makes sense for your waste stream, including if the answer is no.</p>
+              <p>Sites where the numbers work move to a digester scoping conversation. Sites where they do not keep the data and the recommendations, and we say so plainly.</p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="pilot-phase2 fade-up">Phase&nbsp;2, the digester deployment, is scoped only for sites where Phase&nbsp;1 shows the numbers work. We would rather tell you it doesn't than sell you one that won't pay for itself.</p>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="measured">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__eyebrow">What we measure</span>
+          <h2 class="section__title">Categories, not a schema</h2>
+          <p class="section__lead">Everything on this list is something the system measures today. Nothing aspirational is on it.</p>
+        </div>
+        <div class="grid grid--3 measure-grid">
+          <div class="measure-card fade-up stagger-1">
+            <h3 class="measure-card__title">From the container</h3>
+            <ul class="measure-list">
+              <li>Container fill percentage, estimated continuously</li>
+              <li>Pickup events, detected on the device</li>
+              <li>Bag count and container-level compliance flags</li>
+              <li>Camera imagery, with faces and licence plates blurred on the device before anything leaves the site</li>
+            </ul>
+          </div>
+          <div class="measure-card fade-up stagger-2">
+            <h3 class="measure-card__title">From your paperwork</h3>
+            <ul class="measure-list">
+              <li>Hauling contract terms: disposal cost, service frequency, cancellation and auto-renewal</li>
+              <li>Hauler invoices, parsed line by line into a structured ledger</li>
+              <li>Tipping-ticket scale data, where the site has it</li>
+            </ul>
+          </div>
+          <div class="measure-card fade-up stagger-3">
+            <h3 class="measure-card__title">Derived</h3>
+            <ul class="measure-list">
+              <li>Fill-of-haul and the WHES score</li>
+              <li>Over-servicing and under-servicing flags, each with its supporting evidence</li>
+              <li>Right-sizing recommendations with a projected dollar impact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="criteria">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__eyebrow">Success criteria</span>
+          <h2 class="section__title">Six things that can fail</h2>
+          <p class="section__lead">Success criteria that cannot fail are marketing. These can all fail, which is what makes them worth publishing.</p>
+        </div>
+        <ol class="criteria-list fade-up">
+          <li class="criterion">
+            <h3 class="criterion__title">Data completeness</h3>
+            <!-- NEEDS INPUT (Brenden): the 95% threshold is a proposed commitment, not a measured capability. -->
+            <p>At least 95% of expected telemetry records captured across the 90 days, per site.</p>
+          </li>
+          <li class="criterion">
+            <h3 class="criterion__title">Estimate accuracy</h3>
+            <!-- NEEDS INPUT (Brenden): a numeric tolerance cannot be published until the prototype has
+                 produced enough ground truth to state one. Until then the criterion names the pilot
+                 agreement as the place the tolerance is fixed - honest, and still falsifiable. -->
+            <p>Fill estimates agree with physical ground-truth checks within the tolerance stated in the pilot agreement, verified by scheduled manual audits during the window.</p>
+          </li>
+          <li class="criterion">
+            <h3 class="criterion__title">At least one quantified finding per site</h3>
+            <p>An over-service, under-service, contract or invoice discrepancy with a dollar figure that reconciles against your own invoices.</p>
+          </li>
+          <li class="criterion">
+            <h3 class="criterion__title">Privacy verification</h3>
+            <p>Zero unblurred faces or licence plates in any egressed frame, verified by audit of the stored record at closeout.</p>
+          </li>
+          <li class="criterion">
+            <h3 class="criterion__title">Host-verifiable savings</h3>
+            <p>Any savings claimed at closeout are reproducible by you from your own invoices, without our software.</p>
+          </li>
+          <li class="criterion">
+            <h3 class="criterion__title">A decision, delivered</h3>
+            <p>A closeout packet with a clear graduate or do-not-graduate recommendation, and the reasoning behind it.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--tinted" id="you-keep">
+      <div class="container">
+        <div class="section__header fade-up">
+          <span class="section__eyebrow">What you keep</span>
+          <h2 class="section__title">Yours, not access to ours</h2>
+        </div>
+        <ul class="keep-list fade-up">
+          <li>The container inventory and contract summary from the survey, yours at the end of that stage, regardless of what happens next</li>
+          <li>A monthly report for each of the three months</li>
+          <li>Every finding, with its evidence: the claim and the frames or invoice lines that produced it</li>
+          <li>Drafted renegotiation, frequency-reduction and fee-dispute letters, ready to send under your own letterhead. Nothing sends without your click</li>
+          <li>Your data, exported, at any time and at the end: the raw record, not a summary</li>
+          <li>A written go / no-go on an on-site digester, including the reasoning if the answer is no</li>
+          <li>No obligation. Phase&nbsp;1 does not commit you to Phase&nbsp;2</li>
+          <li><strong>Your name stays yours.</strong> We do not publish a host's name, logo, or site details without written permission. If you would rather we never mention you, that is a normal answer and it does not change anything about the pilot</li>
+        </ul>
+        <!-- NEEDS INPUT (Ben): whether Phase 1 is free, subsidised or paid is a commercial
+             decision, not a research finding. The page deliberately carries NO pricing
+             statement at all - a hedge invites the question, silence lets the conversation
+             start. Do not add "contact us for pricing" here. -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="index.html" class="nav__logo" aria-label="EvE Waste home">
+          <img class="logo-lockup logo-lockup--footer" src="assets/eve-logo-176.png"
+               srcset="assets/eve-logo-176.png 1x, assets/eve-logo-352.png 2x"
+               width="176" height="50" alt="" loading="lazy" decoding="async">
+        </a>
+        <p><em>Where every piece of waste has value.</em></p>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/company/108059157" target="_blank" rel="noopener noreferrer" aria-label="EvE Waste on LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/></svg></a>
+          <a href="https://www.facebook.com/EvEWasteSolutions/" target="_blank" rel="noopener noreferrer" aria-label="EvE Waste on Facebook"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://x.com/EvEWaste1" target="_blank" rel="noopener noreferrer" aria-label="EvE Waste on X"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="4" x2="20" y2="20"/><line x1="20" y1="4" x2="4" y2="20"/></svg></a>
+          <a href="https://www.instagram.com/evewaste" target="_blank" rel="noopener noreferrer" aria-label="EvE Waste on Instagram"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <div class="footer__col"><h4>Platform</h4><ul>
+          <li><a href="platform.html">How It Works</a></li>
+          <li><a href="platform.html#market">Market Opportunity</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Our Work</h4><ul>
+          <li><a href="built.html">What We've Built</a></li>
+          <li><a href="platform.html#why">Why We Build</a></li>
+        </ul></div>
+        <div class="footer__col"><h4>Company</h4><ul>
+          <li><a href="investors.html">Investors</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul></div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; 2026 EvE Waste LLC. All rights reserved. &middot; <a href="privacy.html" class="footer__legal-link">Privacy</a></p>
+      <p>Columbus, Ohio &middot; Anaerobic digestion, engineered for value.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=29ee826c"></script>
+  <script src="js/use-cases.js?v=64a8f416"></script>
+</body>
+</html>

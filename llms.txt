@@ -1,0 +1,71 @@
+# EvE Waste
+
+> EvE Waste LLC is a Columbus, Ohio company building modular bio-reactors that
+> turn food waste into clean energy and nutrient-rich fertilizer. The system runs
+> on the natural, microbial process of anaerobic digestion.
+
+## Stage
+
+EvE Waste is a development-stage company. The AD system prototype is built and
+has been through test runs. The bio-reactor is in its second stage of
+development, and the waste-tracking model is in development. The company is
+raising a pre-seed round and applying for grants. There are no clients, no
+revenue and no measured client results. Nothing on the site is published as a
+client result, and no completion dates are published.
+
+Positioning is cost first: the bio-reactor being built processes food waste for
+less than a landfill charges and gets more value out of it. Sustainability is the
+second argument, never the first.
+
+## What the system does
+
+Waste goes in, products come out. Food waste is broken down into digestate
+while producing biogas. The digestate is processed into fertilizer, and the
+biogas is converted into clean energy. The fertilizer is sold into agricultural
+and landscaping markets, and the clean energy offsets the host site's energy bill.
+
+The bio-reactor also carries a waste-tracking model, in development, that reads
+what a site throws out and turns it into a report: where the waste comes from,
+what it costs, and what an organic waste mandate needs to see.
+
+## Figures, with their basis
+
+Every figure below carries the basis it rests on. None of them are measured
+customer results. EvE Waste has no clients yet.
+
+- 19%: new economic value the process generates versus landfilling. Basis: modeled.
+- 15%: average annual increase in landfill tipping and hauling rates. Basis: industry data.
+- 5,000+ years: the span without an economical change in how we process waste. Basis: historical.
+
+No throughput, footprint, retention time, biogas yield, methane content,
+digestate output, utility connection or commissioning figures are published.
+They are available on request under NDA.
+
+## Feedstock
+
+Accepted: all food waste. No refusal list is published.
+
+## Pages
+
+- [Home](https://evewaste.com/): positioning, the four pillars, proof figures.
+- [Platform](https://evewaste.com/platform.html): how the bio-reactor works, the market
+  case, the founding story and company values.
+- [What we have built](https://evewaste.com/built.html): the prototypes built to date.
+- [Investors](https://evewaste.com/investors.html): the pre-seed raise, the development
+  stage, what the round funds, and how figures on this site are labelled.
+- [FAQ](https://evewaste.com/faq.html): company stage, permitting, odour, digestate, air
+  rules, cost against landfill, and what the bio-reactor accepts.
+- [Team](https://evewaste.com/team.html): Ben Rosenthal (Founder & CEO), Brenden Fowler
+  (Founder & COO) and Kyla Fallis (Founder & CIO).
+- [Contact](https://evewaste.com/contact.html): the enquiry form. Replies within one week.
+- [Privacy](https://evewaste.com/privacy.html).
+
+The About page was retired on 2026-09-03; its content is on the Platform page.
+The pilot page is temporarily offline while its details are confirmed.
+
+## Contact
+
+All contact is routed through the form at https://evewaste.com/contact.html.
+There is no public phone number. Response time is within one week.
+
+Location: Columbus, Ohio.
